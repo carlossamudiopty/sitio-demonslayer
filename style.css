@@ -1,5 +1,71 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(120deg, #0f0f0f, #1a1a1a);
+    color: white;
+}
+
 header {
-text-align: center;
-background-color: #b6eeb6; /* verde suave */
-padding: 20px;
+    text-align: center;
+    padding: 40px;
+    background: linear-gradient(90deg, #ff3c00, #ff9100);
+    box-shadow: 0 0 20px #ff3c00;
+}
+
+h1 {
+    margin: 0;
+    font-size: 3rem;
+}
+
+section {
+    padding: 40px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #222;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 0 10px rgba(255,255,255,0.1);
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #ff9100;
+}
+
+.dark {
+    background: #111;
+    border: 1px solid crimson;
+}
+
+.pilares h2 {
+    color: #ff9100;
+}
+
+.lunas h2 {
+    color: crimson;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #000;
+    border-top: 2px solid #ff9100;
+}
+
+.card img {
+    width: 100%;        /* Se ajusta al ancho de la tarjeta */
+    height: 250px;      /* Tamaño uniforme */
+    object-fit: cover;  /* Evita que se deformen */
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: block;
 }
